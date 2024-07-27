@@ -64,6 +64,12 @@ const server = http.createServer((request, response) => {
   }
 });
 
+// ESTO SERÍA LO MISMO QUE USAR POSTMAN
+// fetch("http://localhost:8080/api/students", { 
+//   method: "POST",
+//   body: JSON.stringify({name: "Patricia", age: 55})
+// })
+
 server.listen(PORT, () => {
   console.log("Server listening on port: " + PORT);
 });
